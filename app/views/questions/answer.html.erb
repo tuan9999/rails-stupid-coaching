@@ -1,0 +1,12 @@
+<h1>STUPID COACHING</h1>
+
+<% if @question == "I am going to work" %>
+<h3><%= "good" %></h3>
+<% elsif @question.include?("?") %>
+<h3><%= "Silly question, get dressed and go to work!" %></h3>
+<% else %>
+<h3><%= "I don't care, get dressed and go to work!" %></h3>
+<% end %>
+
+
+<%= link_to "ask the coach", ask_path %>
